@@ -26,20 +26,23 @@ export const Admin = () => {
         const type = select === undefined || select === "recomendados" ? "recomendados" : select
         const url = urlYoutube
 
-        // Extrair o código do vídeo
-        const newUrlVideo = url.match(/(?:\?|&)v=([^&]+)/)[1];
+        if (url !== undefined) {
+            // Extrair o código do vídeo
+            const newUrlVideo = url.match(/(?:\?|&)v=([^&]+)/);
+            if (newUrlVideo) {
+                const videoCode = newUrlVideo[1];
+                const newMovie = {
+                    img_movie: img,
+                    name,
+                    url: videoCode
+                }
+                type === "recomendados" && setRecomendados((prevMovie: any) => [...prevMovie, newMovie])
         
-        const newMovie = {
-            img_movie: img,
-            name,
-            url: newUrlVideo
+                type === "mais_assistidos" && setMaisAssistidos((prevMovie: any) => [...prevMovie, newMovie])
+                
+                type === "lancamentos" && setLancamentos((prevMovie: any) => [...prevMovie, newMovie])        
+            }
         }
-        type === "recomendados" && setRecomendados((prevMovie: any) => [...prevMovie, newMovie])
-        
-        type === "mais_assistidos" && setMaisAssistidos((prevMovie: any) => [...prevMovie, newMovie])
-        
-        type === "lancamentos" && setLancamentos((prevMovie: any) => [...prevMovie, newMovie])
-
         alert("seu filme foi publicado em " + type)
         setImg("")
         setName("")
