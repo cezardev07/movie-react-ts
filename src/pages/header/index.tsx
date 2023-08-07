@@ -5,15 +5,15 @@ export const Header = () => {
     return(
         <Container>
             <nav>
-                <Link to="/" className="logo">
+                <Link to="/movie-react-ts/" className="logo">
                     <span>m</span>ov<span>i</span>e
                     <span className="material-symbols-outlined">
-                    movie
+                        movie
                     </span>
                 </Link>
 
                 <div className="nav-bar">
-                    <Link to="/admin">
+                    <Link to="/movie-react-ts/admin">
                     <span className="material-symbols-outlined">
                         settings_cinematic_blur
                     </span>

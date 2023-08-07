@@ -10,9 +10,9 @@ export const App = () => {
     <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path="/" element={<Client/>}/>
-        <Route path="/admin" element={<Admin/>}/>
-        <Route path="/trailer/embed/:url" element={<Trailer/>}/>
+        <Route path="/movie-react-ts/" element={<Client/>}/>
+        <Route path="/movie-react-ts/admin" element={<Admin/>}/>
+        <Route path="/movie-react-ts/trailer/embed/:url" element={<Trailer/>}/>
         <Route path="*" element={<DefaultRouter/>}/>
       </Routes>
     </BrowserRouter>
