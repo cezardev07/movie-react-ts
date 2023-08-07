@@ -628,7 +628,7 @@ Error generating stack: `+o.message+`
             }
         }
     }
-`,M0=()=>y.jsx($0,{children:y.jsxs("nav",{children:[y.jsxs(Jt,{to:"/",className:"logo",children:[y.jsx("span",{children:"m"}),"ov",y.jsx("span",{children:"i"}),"e",y.jsx("span",{className:"material-symbols-outlined",children:"movie"})]}),y.jsx("div",{className:"nav-bar",children:y.jsx(Jt,{to:"/admin",children:y.jsx("span",{className:"material-symbols-outlined",children:"settings_cinematic_blur"})})})]})}),D0=()=>y.jsxs(yv,{children:[y.jsx(M0,{}),y.jsxs(dv,{children:[y.jsx(or,{path:"/",element:y.jsx(j0,{})}),y.jsx(or,{path:"/admin",element:y.jsx(L0,{})}),y.jsx(or,{path:"/trailer/embed/:url",element:y.jsx(O0,{})}),y.jsx(or,{path:"*",element:y.jsx(z0,{})})]})]}),A0=C0`
+`,M0=()=>y.jsx($0,{children:y.jsxs("nav",{children:[y.jsxs(Jt,{to:"/movie-react-ts/",className:"logo",children:[y.jsx("span",{children:"m"}),"ov",y.jsx("span",{children:"i"}),"e",y.jsx("span",{className:"material-symbols-outlined",children:"movie"})]}),y.jsx("div",{className:"nav-bar",children:y.jsx(Jt,{to:"/movie-react-ts/admin",children:y.jsx("span",{className:"material-symbols-outlined",children:"settings_cinematic_blur"})})})]})}),D0=()=>y.jsxs(yv,{children:[y.jsx(M0,{}),y.jsxs(dv,{children:[y.jsx(or,{path:"/movie-react-ts/",element:y.jsx(j0,{})}),y.jsx(or,{path:"/movie-react-ts/admin",element:y.jsx(L0,{})}),y.jsx(or,{path:"/movie-react-ts/trailer/embed/:url",element:y.jsx(O0,{})}),y.jsx(or,{path:"*",element:y.jsx(z0,{})})]})]}),A0=C0`
     *{
         margin: 0;
         padding: 0;
